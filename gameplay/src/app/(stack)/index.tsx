@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import {
     View,
     Text,
@@ -8,10 +9,32 @@ import { layout } from '../../styles/layout';
 import { img } from '../../styles/imgs';
 import { text } from '../../styles/text';
 import { ButtonIcon } from '../../components/buttonIcon';
+import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
+import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhani';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function SignIn(){
+    const [fontsLoaded, fontsError] = useFonts({
+        Inter_400Regular,
+        Inter_500Medium,
+        Rajdhani_500Medium,
+        Rajdhani_700Bold
+    })
+
+    const onLayoutRootView = useCallback(async () => {
+        if(fontsLoaded || fontsError){
+            await SplashScreen.hideAsync();
+        }
+    }, [fontsLoaded, fontsError]);
+
+    if (!fontsLoaded && !fontsError){
+        return null;
+    }
+
     return(
-        <View style={layout.container}>
+        <View style={layout.container} onLayout={onLayoutRootView}>
             <Image 
                 source={IllustrationImg} 
                 style={img.image}

@@ -6,7 +6,7 @@ export const layout = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: colors.background
+        backgroundColor: colors.secondary100
     },
     content: {
         marginTop: -40,
