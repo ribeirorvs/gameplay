@@ -12,6 +12,7 @@ import { ButtonIcon } from '../../components/buttonIcon';
 import { useFonts, Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhani';
 import * as SplashScreen from 'expo-splash-screen';
+import Background from '../../components/background';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -34,13 +35,13 @@ export default function SignIn(){
     }
 
     return(
-        <View style={layout.container} onLayout={onLayoutRootView}>
+        <Background>
             <Image 
                 source={IllustrationImg} 
                 style={img.image}
                 resizeMode="stretch"
             />
-            <View style={layout.content} >
+            <View style={layout.content} onLayout={onLayoutRootView}>
                 <Text style={text.title}>
                     Conecte-se{'\n'}
                     e organize suas{'\n'}
@@ -54,6 +55,6 @@ export default function SignIn(){
                     title='Entrar com Discord'
                 />
             </View>
-        </View>
+        </Background>
     )
 }
