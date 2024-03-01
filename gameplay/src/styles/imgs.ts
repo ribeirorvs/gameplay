@@ -8,5 +8,10 @@ export const img = StyleSheet.create({
     icon: {
         width: 24,
         height: 18
+    },
+    avatar: {
+        width: 48,
+        height: 48,
+        borderRadius: 8
     }
 })

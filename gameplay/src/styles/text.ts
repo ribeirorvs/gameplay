@@ -25,5 +25,20 @@ export const text = StyleSheet.create({
         fontSize: 15,
         textAlign: 'center',
         fontFamily: fonts.text500
+    },
+    greeting: {
+        fontFamily: fonts.title500,
+        fontSize: 24,
+        color: colors.heading,
+        marginRight: 5
+    },
+    username: {
+        fontFamily: fonts.title700,
+        fontSize: 24,
+        color: colors.heading
+    },
+    message: {
+        fontFamily: fonts.text400,
+        color: colors.highlight
     }
 })

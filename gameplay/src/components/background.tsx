@@ -6,12 +6,13 @@ import { layout } from "../styles/layout";
 
 type Props ={
     children: ReactNode;
+    styleName: keyof typeof layout;
 }
 
-export default function Background({children}: Props){
+export default function Background({children, styleName}: Props){
     return (
         <LinearGradient
-            style={layout.container}
+            style={layout[styleName]}
             colors={[colors.secondary80, colors.secondary100]}
         >
             {children}

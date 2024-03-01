@@ -35,7 +35,9 @@ export default function SignIn(){
     }
 
     return(
-        <Background>
+        <Background
+            styleName="container"
+        >
             <Image 
                 source={IllustrationImg} 
                 style={img.image}

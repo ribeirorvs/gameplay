@@ -5,8 +5,10 @@ export const layout = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
-        //backgroundColor: colors.secondary100
+        alignItems: 'center'
+    },
+    simpleContainer: {
+        flex: 1
     },
     content: {
         marginTop: -40,
@@ -27,5 +29,27 @@ export const layout = StyleSheet.create({
         alignItems: 'center',
         borderRightWidth: 1,
         borderColor: colors.line
+    },
+    header: {
+        width: '100%',
+        paddingHorizontal: 24,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 26
+    },
+    profileContainer: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    user: {
+        flexDirection: 'row'
+    },
+    avatar: {
+        width: 48,
+        height: 48,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 22
     }
 });

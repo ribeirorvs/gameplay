@@ -2,13 +2,14 @@ import {
     Text,
     Image,
     View,
-    TouchableOpacity
 } from "react-native";
 
 import DiscordImg from '../assets/discord.png';
 import { layout } from "../styles/layout";
 import { img } from "../styles/imgs";
 import { text } from "../styles/text";
+import { Link } from "expo-router";
+import { RectButton, GestureHandlerRootView } from "react-native-gesture-handler";
 
 interface Props {
     title: string;
@@ -16,16 +17,19 @@ interface Props {
 
 export function ButtonIcon({title} : Props){
     return (
-        <TouchableOpacity
-            style={layout.buttonContainer}
-            activeOpacity={0.6}
-        >
-            <View style={layout.iconWrapper}>
-                <Image source={DiscordImg} style={img.icon}/>
-            </View>
-            <Text style={text.buttonText}>
-                {title}
-            </Text>
-        </TouchableOpacity>
+        <GestureHandlerRootView>
+            <Link href={"home"} asChild>
+                <RectButton
+                    style={layout.buttonContainer}
+                >
+                    <View style={layout.iconWrapper}>
+                        <Image source={DiscordImg} style={img.icon}/>
+                    </View>
+                    <Text style={text.buttonText}>
+                        {title}
+                    </Text>
+                </RectButton>
+            </Link>
+        </GestureHandlerRootView>
     )
 }
