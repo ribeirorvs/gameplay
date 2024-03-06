@@ -51,5 +51,13 @@ export const layout = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 22
-    }
+    },
+    buttonAdd: {
+        height: 48,
+        width: 48,
+        backgroundColor: colors.primary,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent:'center'
+    }    
 });

@@ -4,6 +4,8 @@ import Background from "../../components/background";
 import { Profile } from "../../components/profile";
 import { LinearGradient } from "expo-linear-gradient";
 import { colors } from "../../styles/colors";
+import { ButtonAdd } from "../../components/buttonAdd";
+import { CategorySelect } from "../../components/categorySelect";
 
 
 export default function home(){
@@ -13,7 +15,11 @@ export default function home(){
         >
                 <View style={layout.header}>
                     <Profile />
-                </View>    
+                    <ButtonAdd />
+                </View>
+                <View>
+                    <CategorySelect />
+                </View>
         </Background>
     )
 }
