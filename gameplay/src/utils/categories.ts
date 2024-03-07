@@ -10,12 +10,12 @@ export const categories =[
         icon: Ranked
     },
     {
-        id: '1',
+        id: '2',
         title: 'Duel 1x1',
         icon: Duel
     },
     {
-        id: '1',
+        id: '3',
         title: 'Fun',
         icon: Fun
     },

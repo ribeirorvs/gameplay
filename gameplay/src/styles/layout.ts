@@ -35,7 +35,8 @@ export const layout = StyleSheet.create({
         paddingHorizontal: 24,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: 26
+        marginTop: 26,
+        marginBottom: 42
     },
     profileContainer: {
         flexDirection: 'row',
@@ -59,5 +60,45 @@ export const layout = StyleSheet.create({
         borderRadius: 8,
         alignItems: 'center',
         justifyContent:'center'
-    }    
+    },
+    category: {
+        width: 104,
+        height: 120,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 8,
+        marginRight: 8
+    },
+    categoryContent: {
+        width: 100,
+        height: 116,
+        backgroundColor: colors.secondary40,
+        borderRadius: 8,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: 7
+    },
+    uncheck: {
+        width: 12,
+        height: 12,
+        backgroundColor: colors.secondary100,
+        alignSelf: 'flex-end',
+        marginRight: 7,
+        borderColor: colors.secondary50,
+        borderWidth: 3,
+        borderRadius: 3
+    },
+    checked: {
+        width: 10,
+        height: 10,
+        backgroundColor: colors.primary,
+        alignSelf: 'flex-end',
+        marginRight: 7,
+        borderRadius: 3
+    },
+    categorySelect: {
+        minHeight: 120,
+        minWidth: 120,
+        paddingLeft: 24
+    }
 });

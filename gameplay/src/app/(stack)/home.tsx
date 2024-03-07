@@ -6,9 +6,16 @@ import { LinearGradient } from "expo-linear-gradient";
 import { colors } from "../../styles/colors";
 import { ButtonAdd } from "../../components/buttonAdd";
 import { CategorySelect } from "../../components/categorySelect";
+import { useState } from "react";
 
 
 export default function home(){
+    const [category, setCategory] = useState('');
+
+    function handleCategorySelect(categoryId: string){
+        categoryId === category ? setCategory(''): setCategory(categoryId)
+    }
+
     return (
         <Background
             styleName="simpleContainer"
@@ -18,7 +25,10 @@ export default function home(){
                     <ButtonAdd />
                 </View>
                 <View>
-                    <CategorySelect />
+                    <CategorySelect 
+                        categorySelected={category}
+                        setCategory={handleCategorySelect}
+                    />
                 </View>
         </Background>
     )

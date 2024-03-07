@@ -40,5 +40,10 @@ export const text = StyleSheet.create({
     message: {
         fontFamily: fonts.text400,
         color: colors.highlight
+    },
+    categoryTitle: {
+        fontFamily: fonts.title500,
+        color: colors.heading,
+        fontSize: 15
     }
 })
