@@ -45,5 +45,38 @@ export const text = StyleSheet.create({
         fontFamily: fonts.title500,
         color: colors.heading,
         fontSize: 15
+    },
+    listHeaderTitle: {
+        fontFamily: fonts.title700,
+        color: colors.heading,
+        fontSize: 18
+    },
+    listHeaderSubtitle: {
+        fontFamily: fonts.text400,
+        color: colors.highlight,
+        fontSize: 13
+    },
+    appointmentTitle: {
+        fontFamily: fonts.title700,
+        color: colors.heading,
+        fontSize: 18
+    },
+    appointmentCategory: {
+        fontFamily: fonts.text400,
+        color: colors.highlight,
+        fontSize: 13,
+        marginRight: 24
+    },
+    appointmentDateInfo: {
+        fontFamily: fonts.text500,
+        color: colors.heading,
+        fontSize: 13,
+        marginLeft: 7
+    },
+    appointmentPlayers: {
+        fontFamily: fonts.text500,
+        fontSize: 13,
+        marginLeft: 7,
+        marginRight: 24
     }
 })

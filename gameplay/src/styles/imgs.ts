@@ -13,5 +13,11 @@ export const img = StyleSheet.create({
         width: 48,
         height: 48,
         borderRadius: 8
+    },
+    guildIcon: {
+        width: 64,
+        height: 64,
+        borderRadius: 8,
+        marginRight: 20
     }
 })

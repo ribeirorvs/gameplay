@@ -100,5 +100,52 @@ export const layout = StyleSheet.create({
         minHeight: 120,
         minWidth: 120,
         paddingLeft: 24
+    },
+    homeContent: {
+        marginTop: 42
+    },
+    listHeader: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingHorizontal: 24
+    },
+    appointment: {
+        width: '100%',
+        flexDirection: 'row',
+        alignSelf: 'center',
+    },
+    appointmentContent: {
+        flex: 1
+    },
+    appointmentHeader: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 12
+    },
+    appointmentFooter: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    appointmentDateInfo: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    appointmentPlayersInfo: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    matches: {
+        marginTop: 24,
+        marginLeft: 24
+    },
+    listDivider: {
+        width: '80%',
+        height: 1,
+        backgroundColor: colors.secondary40,
+        marginVertical: 21,
+        alignSelf: 'flex-end'
     }
 });
