@@ -42,7 +42,7 @@ export const text = StyleSheet.create({
         color: colors.highlight
     },
     categoryTitle: {
-        fontFamily: fonts.title500,
+        fontFamily: fonts.title700,
         color: colors.heading,
         fontSize: 15
     },
