@@ -4,7 +4,7 @@ import { colors } from "./colors";
 export const layout = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        //justifyContent: 'center',
         alignItems: 'center'
     },
     simpleContainer: {
@@ -143,10 +143,16 @@ export const layout = StyleSheet.create({
         marginLeft: 24
     },
     listDivider: {
-        width: '80%',
+        width: '78%',
         height: 1,
         backgroundColor: colors.secondary40,
-        marginVertical: 21,
-        alignSelf: 'flex-end'
+        marginVertical: 31,
+        alignSelf: 'flex-end',
+        marginTop: 2
+    },
+    appointmentDetails: {
+        width: '100%',
+        height: 104,
+        padding: 2
     }
 });

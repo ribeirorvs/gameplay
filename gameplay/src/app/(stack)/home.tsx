@@ -55,6 +55,7 @@ export default function home(){
                 <CategorySelect 
                     categorySelected={category}
                     setCategory={handleCategorySelect}
+                    hasCheckBox={true}
                 />
             </View>
             <View style={layout.homeContent}>
