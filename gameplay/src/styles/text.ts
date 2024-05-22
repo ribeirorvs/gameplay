@@ -78,5 +78,27 @@ export const text = StyleSheet.create({
         fontSize: 13,
         marginLeft: 7,
         marginRight: 24
+    },
+    headerAppointmentTitle: {
+        flex: 1,
+        textAlign: 'center',
+        fontFamily: fonts.title700,
+        fontSize: 20,
+        color: colors.heading
+    },
+    appointmentDetailsTitle: {
+        fontSize: 28,
+        fontFamily: fonts.title700,
+        color: colors.heading
+    },
+    appointmentDetailsSubtitle: {
+        fontSize: 13,
+        fontFamily: fonts.text400,
+        color: colors.heading
+    },
+    nameStatus: {
+        fontFamily: fonts.text400,
+        color: colors.highlight,
+        fontSize: 13
     }
 })

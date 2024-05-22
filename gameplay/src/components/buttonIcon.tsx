@@ -13,12 +13,13 @@ import { RectButton, GestureHandlerRootView } from "react-native-gesture-handler
 
 interface Props {
     title: string;
+    url?: string;
 }
 
-export function ButtonIcon({title} : Props){
+export function ButtonIcon({title, url} : Props){
     return (
         <GestureHandlerRootView>
-            <Link href={"home"} asChild>
+            <Link href={url? url: 'home'} asChild>
                 <RectButton
                     style={layout.buttonContainer}
                 >

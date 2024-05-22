@@ -19,5 +19,10 @@ export const img = StyleSheet.create({
         height: 64,
         borderRadius: 8,
         marginRight: 20
+    },
+    appointmentBanner:{
+        width: '100%',
+        height: 234,
+        marginBottom: 30
     }
 })

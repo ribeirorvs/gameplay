@@ -154,5 +154,47 @@ export const layout = StyleSheet.create({
         width: '100%',
         height: 104,
         padding: 2
+    },
+    headerAppointment: {
+        width: "100%",
+        height: 104,
+        paddingTop: 26,
+        paddingHorizontal: 24,
+        flexDirection: 'row',
+        alignContent: 'center',
+        alignItems: 'center'
+    },
+    appointmentDetailsContainer: {
+        flex: 1
+    },
+    appointmentDetailsBannerContent:{
+        flex: 1,
+        justifyContent: 'flex-end',
+        paddingHorizontal: 24,
+        marginBottom: 30
+    },
+    appointmentDetailsFooter: {
+        paddingHorizontal: 24,
+        paddingVertical: 20,
+        marginBottom: 50
+    },
+    members: {
+        marginLeft: 24,
+        marginTop: 24
+    },
+    memberContainer: {
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    bulletStatus: {
+        width: 8,
+        height: 8,
+        borderRadius: 4,
+        marginRight: 10
+    },
+    memberStatus: {
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { ListHeader } from "../../components/listHeader";
 import { Appointment } from "../../components/appointment";
 import { ListDivider } from "../../components/listDivider";
+import { Link } from "expo-router";
 
 
 export default function home(){
@@ -43,6 +44,10 @@ export default function home(){
         categoryId === category ? setCategory(''): setCategory(categoryId)
     }
 
+    function handleAppointmentDetails(){
+        
+    }
+
     return (
         <Background
             styleName="simpleContainer"
@@ -70,7 +75,11 @@ export default function home(){
                     showsHorizontalScrollIndicator={false}
                     ItemSeparatorComponent={() => <ListDivider />}
                     renderItem={({ item }) => (
-                        <Appointment data={item}/>
+                        <Link href={"appointmentDetails"} asChild>
+                            <Appointment 
+                                data={item}
+                            />
+                        </Link>
                     )}
                 />
             </View>
