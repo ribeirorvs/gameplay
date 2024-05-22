@@ -196,5 +196,31 @@ export const layout = StyleSheet.create({
     memberStatus: {
         flexDirection: 'row',
         alignItems: 'center'
+    },
+    form: {
+        paddingHorizontal: 24,
+        marginTop: 32
+    },
+    select: {
+        width: '100%',
+        flexDirection: 'row',
+        height: 68,
+        borderColor: colors.secondary50,
+        borderWidth: 1,
+        borderRadius: 8,
+        alignItems: 'center',
+        paddingRight: 25,
+        overflow: 'hidden',
+    },
+    selectBody: {
+        flex: 1,
+        alignItems: 'center',
+    },
+    imgSelect: {
+        width: 64,
+        height: 68,
+        backgroundColor: colors.secondary50,
+        borderWidth: 1,
+        borderRadius: 8
     }
 });

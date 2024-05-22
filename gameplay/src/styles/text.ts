@@ -100,5 +100,11 @@ export const text = StyleSheet.create({
         fontFamily: fonts.text400,
         color: colors.highlight,
         fontSize: 13
+    },
+    label: {
+        fontSize: 18,
+        fontFamily: fonts.title700,
+        color: colors.heading,
+        
     }
 })
